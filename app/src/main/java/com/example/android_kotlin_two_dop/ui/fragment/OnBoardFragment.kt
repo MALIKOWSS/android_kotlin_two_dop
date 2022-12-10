@@ -26,7 +26,7 @@ class OnBoardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initialize()
         binding.viewPager.adapter = Adapter(this@OnBoardFragment)
-        TabLayoutMediator(binding.layout, binding.viewPager) { _, _ ->
+        TabLayoutMediator(binding.ui, binding.viewPager) { it, it2 ->
         }.attach()
     }
 

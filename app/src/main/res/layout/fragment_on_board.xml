@@ -7,20 +7,22 @@
         android:orientation="vertical"
         tools:context=".ui.fragment.OnBoardFragment">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout="@layout/fragment_two" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:background="@drawable/ic_two"
-            app:tabIndicator="@drawable/ic"
-            app:tabIndicatorColor="@color/purple_700"
-            app:tabIndicatorHeight="50dp" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/one"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    </FrameLayout>
+
+</FrameLayout>
